@@ -34,8 +34,9 @@ class Document: ObservableObject {
 //      ItemModel(urlStr: imageArray[6], label:"Pedro"),
 //      ItemModel(urlStr: imageArray[7], label:"Luisa"),
 //      ItemModel(urlStr: imageArray[8], label:"Raaziq"),
-      ItemModel(urlStr: imageArray[9], label:"jht", assetName: "red", systemName: "rectangle"),
-      ItemModel(urlStr: imageArray[10], label:"jht"),
+      ItemModel(urlStr: imageArray[9], label:"jht1", assetName: "red", systemName: "rectangle"),
+      ItemModel(urlStr: imageArray[10], label:"jht2", assetName: "yellow"),
+      ItemModel(urlStr: imageArray[0], label:"dan", systemName: "circle"),
     ]
   }
   
