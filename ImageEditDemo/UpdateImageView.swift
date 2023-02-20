@@ -15,6 +15,7 @@ struct UpdateImageView: View {
   @State var label:String = ""
   @State var assetName:String = ""
   @State var systemName:String = ""
+    @State var uiImage:UIImage?
 
   @Environment(\.dismiss) var dismiss
   @EnvironmentObject var document:Document
@@ -25,7 +26,7 @@ struct UpdateImageView: View {
         Image(assetName)
           .resizable()
           .aspectRatio(contentMode: .fit)
-        if let uiImage = imageFor(string: urlStr) {
+        if let uiImage {
           Image(uiImage: uiImage)
             .resizable()
             .aspectRatio(contentMode: .fit)
@@ -61,6 +62,9 @@ struct UpdateImageView: View {
           .textInputAutocapitalization(.never)
           .disableAutocorrection(true)
       }
+    }
+    .task {
+        uiImage =  await imageFor(string: urlStr)
     }
   }
 }

@@ -7,6 +7,7 @@ import SwiftUI
 struct ItemDetail: View {
   @EnvironmentObject var document:Document
   @Environment(\.dismiss) var dismiss
+    @State var uiImage:UIImage?
   var item:ItemModel
   var body: some View {
     VStack {
@@ -14,7 +15,7 @@ struct ItemDetail: View {
         Image(item.assetName)
           .resizable()
           .aspectRatio(contentMode: .fit)
-        if let uiImage = imageFor(string: item.urlStr) {
+        if let uiImage  {
           Image(uiImage: uiImage)
             .resizable()
             .aspectRatio(contentMode: .fit)
@@ -47,6 +48,9 @@ struct ItemDetail: View {
         document.deleteItem(id: item.id)
         dismiss();
       }
+    }
+    .task {
+        uiImage =  await imageFor(string: item.urlStr)
     }
   }
 }

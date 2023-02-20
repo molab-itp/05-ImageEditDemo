@@ -7,6 +7,7 @@ import SwiftUI
 
 struct ItemRow: View {
   var item:ItemModel
+    @State var uiImage:UIImage?
   var body: some View {
     HStack {
       ZStack {
@@ -14,7 +15,7 @@ struct ItemRow: View {
           .resizable()
           .aspectRatio(contentMode: .fit)
           .frame(width:100, height: 100)
-        if let uiImage = imageFor(string: item.urlStr) {
+        if let uiImage {
           Image(uiImage: uiImage)
             .resizable()
             .aspectRatio(contentMode: .fit)
@@ -27,6 +28,9 @@ struct ItemRow: View {
       }
       Text(item.label)
       Spacer()
+    }
+    .task {
+        uiImage =  await imageFor(string: item.urlStr)
     }
   }
 }
