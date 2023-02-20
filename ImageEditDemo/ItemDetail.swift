@@ -5,10 +5,14 @@
 import SwiftUI
 
 struct ItemDetail: View {
+    var item:ItemModel
+
+    @State var uiImage:UIImage?
+
     @EnvironmentObject var document:Document
     @Environment(\.dismiss) var dismiss
-    @State var uiImage:UIImage?
-    var item:ItemModel
+
+    
     var body: some View {
         VStack {
             ZStack {

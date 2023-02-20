@@ -7,7 +7,9 @@ import SwiftUI
 
 struct ItemRow: View {
     var item:ItemModel
+    
     @State var uiImage:UIImage?
+    
     var body: some View {
         HStack {
             ZStack {

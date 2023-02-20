@@ -9,12 +9,13 @@ import SwiftUI
 
 struct UpdateImageView: View {
     var action: String // "Update" or "Add"
-    //  var item:ItemModel
     var id: UUID
+    
     @State var urlStr:String = ""
     @State var label:String = ""
     @State var assetName:String = ""
     @State var systemName:String = ""
+    
     @State var uiImage:UIImage?
     
     @Environment(\.dismiss) var dismiss

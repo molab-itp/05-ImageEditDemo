@@ -10,9 +10,12 @@ struct AddImageView: View {
     @State var label:String = ""
     @State var assetName:String = ""
     @State var systemName:String = ""
+    
     @State var uiImage:UIImage?
+    
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var document:Document
+    
     var body: some View {
         VStack {
             ZStack {
