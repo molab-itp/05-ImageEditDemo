@@ -6,5 +6,7 @@
 
 - Uses Form to collect basic user info.
 
-- Use async and await to load image from url
+- Uses async and await to load image from url
+
+[] TODO: Save as JSON
 
