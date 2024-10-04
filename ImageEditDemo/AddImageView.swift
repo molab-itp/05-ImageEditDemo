@@ -65,9 +65,7 @@ struct AddImageView: View {
     }
 }
 
-struct AddImageView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddImageView()
-    }
+#Preview {
+    AddImageView()
 }
 

@@ -70,8 +70,6 @@ struct UpdateImageView: View {
     }
 }
 
-struct UpdateImageView_Previews: PreviewProvider {
-    static var previews: some View {
-        UpdateImageView(action: "action", id: UUID())
-    }
+#Preview {
+    UpdateImageView(action: "action", id: UUID())
 }
