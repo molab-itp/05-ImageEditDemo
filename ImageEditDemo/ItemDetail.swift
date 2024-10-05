@@ -59,3 +59,6 @@ struct ItemDetail: View {
     }
 }
 
+#Preview {
+    ItemDetail(item: ItemModel())
+}

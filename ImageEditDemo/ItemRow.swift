@@ -37,4 +37,7 @@ struct ItemRow: View {
     }
 }
 
+#Preview {
+    ItemRow(item: ItemModel())
+}
 

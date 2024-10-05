@@ -14,7 +14,7 @@ struct ContentView: View {
                 ForEach(document.items.reversed()) { item in
                     NavigationLink(
                         destination:
-                            // ItemDetail(item: item)
+                        // ItemDetail(item: item)
                         // UpdateImageView(item: item)
                         UpdateImageView(action: "Update",
                                         id: item.id,
@@ -28,7 +28,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("My Images")
+            .navigationTitle("My Items")
             .navigationBarItems(
                 trailing:
                     NavigationLink(
@@ -36,7 +36,7 @@ struct ContentView: View {
                             AddImageView()
                     )
                 {
-                    Text("Add Image")
+                    Text("Add Item")
                 }
             )
         }
