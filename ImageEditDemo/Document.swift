@@ -19,8 +19,9 @@ let imageArray = [
     "https://jht1493.net/a1/skt/assets/webdb/jht/IMG_7555.JPEG",
 ]
 
-class Document: ObservableObject {
-    @Published var items:[ItemModel]
+@Observable
+class Document: Observable {
+    var items:[ItemModel]
     init() {
         print("Model init")
         // items for testing

@@ -9,7 +9,7 @@ struct ItemDetail: View {
 
     @State var uiImage:UIImage?
 
-    @EnvironmentObject var document:Document
+    @Environment(Document.self) var document
     @Environment(\.dismiss) var dismiss
 
     
@@ -61,4 +61,5 @@ struct ItemDetail: View {
 
 #Preview {
     ItemDetail(item: ItemModel())
+        .environment(Document())
 }

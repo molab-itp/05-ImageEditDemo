@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var document:Document
+    @Environment(Document.self) var document
     
     var body: some View {
         NavigationView {
@@ -45,5 +45,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .environmentObject(Document())
+        .environment(Document())
 }

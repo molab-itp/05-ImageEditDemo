@@ -1,4 +1,4 @@
-# 05-ImageEditDemo
+# [05-ImageEditDemo](https://github.com/molab-itp/05-ImageEditDemo)
 
 - Creating and editing a list of images.
 
@@ -8,5 +8,12 @@
 
 - Uses async and await to load image from url
 
-[] TODO: Save as JSON
+## Changes
+
+- Track data using @Observable, @Environment, .environment(
+- replaces @State, @StateObject and @EnvironmentObject
+
+## TODO
+
+- Save as JSON
 
