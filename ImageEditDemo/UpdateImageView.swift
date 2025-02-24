@@ -72,4 +72,5 @@ struct UpdateImageView: View {
 
 #Preview {
     UpdateImageView(action: "action", id: UUID())
+    .environment(Document())
 }
