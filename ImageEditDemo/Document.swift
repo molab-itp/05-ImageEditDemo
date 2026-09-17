@@ -33,7 +33,7 @@ class Document: Observable {
             // ItemModel(urlStr: imageArray[4], label:"Clay"),
             // ItemModel(urlStr: imageArray[5], label:"Katherine"),
             // ItemModel(urlStr: imageArray[6], label:"Pedro"),
-            // ItemModel(urlStr: imageArray[7], label:"Luisa"),
+             ItemModel(urlStr: imageArray[7], label:"Luisa"),
             // ItemModel(urlStr: imageArray[8], label:"Raaziq"),
             ItemModel(urlStr: imageArray[9], label:"jht1", assetName: "red", systemName: "rectangle"),
             ItemModel(urlStr: imageArray[10], label:"jht2", assetName: "yellow"),
