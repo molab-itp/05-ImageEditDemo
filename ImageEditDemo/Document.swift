@@ -15,8 +15,8 @@ let imageArray = [
     "https://tisch.nyu.edu/content/dam/tisch/itp/alumni/pedro.galvao.jpg.preset.square.jpeg",
     "https://tisch.nyu.edu/content/dam/tisch/itp/Faculty/Luisa-Pereira.jpg.preset.square.jpeg",
     "https://tisch.nyu.edu/content/dam/tisch/itp/alumni/raaziq-brown.jpg.preset.square.jpeg?",
-    "https://jht1493.net/a1/skt/assets/webdb/jht/IMG_4491.JPEG",
-    "https://jht1493.net/a1/skt/assets/webdb/jht/IMG_7555.JPEG",
+    "https://m.jht1493.net/johnhenrythompson/jt_cu.jpg",
+    "https://jht1493.net/a1/skt/assets/webdb/jht/IMG_7555.JPEG", // Failing URL, relocated.
 ]
 
 @Observable
