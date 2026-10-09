@@ -10,9 +10,7 @@ struct AddImageView: View {
   @State var label:String = ""
   @State var assetName:String = ""
   @State var systemName:String = ""
-  
-  //    @State var uiImage:UIImage?
-  
+    
   @Environment(\.dismiss) var dismiss
   @Environment(Document.self) var document
   
@@ -27,7 +25,6 @@ struct AddImageView: View {
             image // Displays the loaded image.
               .resizable()
               .aspectRatio(contentMode: .fit)
-            // .frame(width:100, height: 100)
           } else if phase.error != nil {
             Color.red // Indicates an error.
           } else {
@@ -69,9 +66,6 @@ struct AddImageView: View {
           .disableAutocorrection(true)
       }
     }
-    //        .task {
-    //            uiImage =  await imageFor(string: urlStr)
-    //        }
   }
 }
 

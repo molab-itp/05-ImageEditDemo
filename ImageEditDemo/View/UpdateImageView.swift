@@ -15,9 +15,7 @@ struct UpdateImageView: View {
   @State var label:String = ""
   @State var assetName:String = ""
   @State var systemName:String = ""
-  
-//  @State var uiImage:UIImage?
-  
+    
   @Environment(\.dismiss) var dismiss
   @Environment(Document.self) var document
   
@@ -73,9 +71,6 @@ struct UpdateImageView: View {
           .disableAutocorrection(true)
       }
     }
-//    .task {
-//      uiImage =  await imageFor(string: urlStr)
-//    }
   }
 }
 
